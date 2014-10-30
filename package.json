@@ -1,6 +1,6 @@
 {
   "name": "bcoin-protocol",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bitcoin protocol, parser and framer",
   "main": "index.js",
   "scripts": {
