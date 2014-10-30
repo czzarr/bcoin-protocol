@@ -4,6 +4,7 @@ var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
 var script = require('bcoin-script')
 var utils = require('bcoin-utils')
+require('buffertools').extend()
 
 var assert = utils.assert;
 var readU32 = utils.readU32;
