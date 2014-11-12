@@ -280,6 +280,9 @@ Parser.prototype.parseTXOut = function parseTXOut(p) {
 Parser.prototype.parseTX = function parseTX(p) {
     if (p.length < 10) return this._error('Invalid tx size');
 
+    var txid = utils.toHex(utils.dsha256(p))
+    txid = txid.match(/.{2}/g).reverse().join("")
+
     var inCount = readIntv(p, 4);
     var off = inCount.off;
     inCount = inCount.r;
@@ -314,6 +317,7 @@ Parser.prototype.parseTX = function parseTX(p) {
 
     return {
         _raw: p,
+        txid: txid,
         version: readU32(p, 0),
         inputs: txIn,
         outputs: txOut,
