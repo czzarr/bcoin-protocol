@@ -272,7 +272,7 @@ Parser.prototype.parseTXOut = function parseTXOut(p) {
 
     return {
         size: off + scriptLen,
-        value: new bn(p.slice(0, 8).reverse()),
+        value: new bn(utils.toArray(p.slice(0, 8)).reverse()),
         script: script.decode(p.slice(off, off + scriptLen))
     };
 };
