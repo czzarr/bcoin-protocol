@@ -1,6 +1,6 @@
 {
   "name": "bcoin-protocol",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Bitcoin protocol, parser and framer",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Stanislas Marion <stanislas.marion@gmail.com> (http://github.com/czzarr)",
   "license": "MIT",
   "dependencies": {
-    "bcoin-script": "^1.0.0",
+    "bcoin-script": "^2.0.0",
     "bcoin-utils": "^1.0.0",
     "bitcoin-constants": "^1.1.0",
     "bn.js": "^0.14.1",
@@ -24,6 +24,6 @@
     "inherits": "^2.0.1"
   },
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^2.0.1",
   }
 }
